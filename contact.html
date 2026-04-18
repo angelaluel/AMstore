@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <style>
+    /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  height: 100vh;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 30px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+/* Container */
+.contact-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Heading */
+.contact-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form inputs */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Focus effect */
+form input:focus,
+form textarea:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79,172,254,0.5);
+}
+
+/* Textarea resize */
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #4facfe;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button hover */
+form button:hover {
+  background: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .contact-container {
+    padding: 20px;
+  }
+}
+  </style>
+  <title>Contacts</title>
+</head>
+<body>
+  <header>
+  <div class="logo"><img src="photos/loggo.jpg" alt=""></div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav>
+    <ul id="menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<h1>Contact Us</h1>
+<div class="container">
+    
+<form>
+  <input type="text" placeholder="Your Name" required><br><br>
+  <input type="email" placeholder="Your Email" required><br><br>
+  <textarea placeholder="Your Message"></textarea><br><br>
+  <button type="submit">Send</button>
+</form>
+</div>
+
+</body>
+</html>

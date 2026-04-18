@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>About</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 30px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* TITLE */
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 2.5rem;
+}
+
+/* ABOUT SECTIONS */
+.container > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* IMAGES */
+.container img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.container p {
+  margin-bottom: 10px;
+}
+
+/* BACK BUTTON */
+.container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.container a:hover {
+  background: #ff9800;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container > div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><img src="photos/loggo.jpg" alt=""></div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav>
+    <ul id="menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="container">
+    <h1>About Us</h1>
+    <div>
+      <img src="photos/selection suite.jpg" alt="">
+      <p> this is AM fashion & design store, it is developed to deal with gap between buyers and sellers.
+      we specialize in fashionable items and customary order.
+      our designs are affordable to our esteem customers.
+      AM fashion design give its cutomers stastisfaction because we are the best in both delivery and 
+      transportation.</p>
+    </div>
+    <div>
+      <img src="photos/designers shoes.jpg" alt="">
+      <p>you can order online anytime, anywhere and our products will reach to you in a second.
+      our mission is to provide excellent products that you can trust.
+      We sell high-quality products at affordable prices.
+      thank you for choosing AM fastion & design store, we lookforward into your stastisfaction.
+    </p>
+    </div>
+<a href="home.html">Back Home</a>
+</div>
+</body>
+</html>
